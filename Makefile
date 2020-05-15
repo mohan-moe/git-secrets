@@ -21,5 +21,12 @@ install:
 	@mkdir -p ${DESTDIR}${PREFIX}/bin
 	@cp -f git-secrets ${DESTDIR}${PREFIX}/bin
 	@cp -f git-secrets.1 ${DESTDIR}${MANPREFIX}
+	@echo "git-secrets installed successfully on ${DESTDIR}${PREFIX}/bin"
+	@echo "add ${DESTDIR}${PREFIX}/bin to your environment variable"
+
+uninstall:
+	@rm ${DESTDIR}${PREFIX}/bin/git-secrets
+	@rm ${DESTDIR}${MANPREFIX}/git-secrets.1
+	@echo "git-secrets uninstalled successfully"
 
 .PHONY: help test man

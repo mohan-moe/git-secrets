@@ -49,23 +49,11 @@ You can customize the install path using the PREFIX and MANPREFIX variables.
 
     make install
 
-Windows
-~~~~~~~
-
-Run the provided ``install.ps1`` powershell script. This will copy the needed files
-to an installation directory (``%USERPROFILE%/.git-secrets`` by default) and add
-the directory to the current user ``PATH``.
+Use below command to uninstall ``git-secrets``
 
 ::
 
-    PS > ./install.ps1
-
-Homebrew (for macOS users)
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-::
-
-    brew install git-secrets
+    make uninstall
 
 .. warning::
 
@@ -530,14 +518,3 @@ Use the ``--no-verify`` option in the event of a false positive match in a
 commit, merge, or commit message. This will skip the execution of the
 git hook and allow you to make the commit or merge.
 
-
-About
-------
-
-- Author: `Michael Dowling <https://github.com/mtdowling>`_
-- Issue tracker: This project's source code and issue tracker can be found at
-  `https://github.com/awslabs/git-secrets <https://github.com/awslabs/git-secrets>`_
-- Special thanks to Adrian Vatchinsky and Ari Juels of Cornell University for
-  providing suggestions and feedback.
-
-Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
