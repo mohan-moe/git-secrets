@@ -47,12 +47,15 @@ You can customize the install path using the PREFIX and MANPREFIX variables.
 
 ::
 
+    git clone https://github.com/mohan-moe/git-secrets.git
+    cd git-secrets.git
     make install
 
 Use below command to uninstall ``git-secrets``
 
 ::
 
+    cd <path/to/git-secrets.git>
     make uninstall
 
 .. warning::
