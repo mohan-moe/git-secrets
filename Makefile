@@ -27,6 +27,7 @@ install:
 uninstall:
 	@rm ${DESTDIR}${PREFIX}/bin/git-secrets
 	@rm ${DESTDIR}${MANPREFIX}/git-secrets.1
+	@git config --global --remove-section secrets
 	@echo "git-secrets uninstalled successfully"
 
 .PHONY: help test man
